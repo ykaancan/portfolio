@@ -1,0 +1,103 @@
+<main>
+  <article>
+
+    <!--
+      - #CONTACT
+    -->
+
+    <section class="section contact has-bg-image" aria-labelledby="contact-label"
+             style="background-image: url('./assets/images/backgroundd.png')">
+      <div class="container">
+
+        <form [formGroup]="form" action="javascript:void(0)" (submit)="send()" class="contact-form">
+
+          <h2 class="headline-sm" id="contact-label">Get in touch</h2>
+
+          <p class="contact-text body-md">
+            For business inquiries please drop a note.
+          </p>
+
+          <div class="wrapper">
+
+            <div>
+              <label for="name" class="label">First name</label>
+
+              <input formControlName="from_name" type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+            </div>
+
+            <div>
+              <label for="email" class="label">Your Email </label>
+
+              <input formControlName="from_email" type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+            </div>
+
+          </div>
+
+          <label for="subject" class="label">Subject</label>
+          <input formControlName="subject" type="text" name="subject" id="subject" placeholder="Subject *" class="input-field">
+
+          <label for="message" class="label">Your message </label>
+          <textarea formControlName="message" name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
+
+          <button type="submit"  class="btn btn-tertiary">Send Message</button>
+
+        </form>
+
+        <div class="contact-content">
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Phone</p>
+
+                <a target="_blank" href="https://wa.me/5415295972" class="body-lg">+90 541 529 5972</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Mail</p>
+
+                <a href="tel:ykaancan@gmail.com" class="body-lg">ykaancan@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
+                <ion-icon name="location" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Location</p>
+
+                <address class="body-lg">
+                  Eskisehir,
+                  Turkey
+                </address>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+</main>
